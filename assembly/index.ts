@@ -18,6 +18,9 @@ export function getTweets(): Tweet[] {
 export function likeTweet(tweetId: string): void {
     const tweet = getTweet(tweetId);
     assert(tweet != null, "The tweet is not found");
+    if (tweet === null) {
+        return;
+    }
 
     tweet.updateLikeCount();
     listedTweets.set(tweet.ID, tweet);
@@ -26,7 +29,9 @@ export function likeTweet(tweetId: string): void {
 export function shareTweet(tweetId: string): void {
     const tweet = getTweet(tweetId);
     assert(tweet != null, "The tweet is not found");
-
+    if (tweet === null) {
+        return;
+    }
     tweet.updateShareCount();
     listedTweets.set(tweet.ID, tweet);
 }
