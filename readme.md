@@ -8,8 +8,9 @@ There are two view methods in which you can get a tweet by its id or tweet lists
 
 Also there are three call methods in which you can submit your tweet, like a tweet and share a tweet.
 
-near call zafer25.testnet submitTweet '{"tweet": {"ID": "1", "content": "second tweet", "date": "23042022", "tag": "NEAR"}}' --accountId=zafer25.testnet
-near call zafer25.testnet likeTweet '{"tweetId": "1"}' --accountId=zafer25.testnet
-near call zafer25.testnet shareTweet '{"tweetId": "1"}' --accountId=zafer25.testnet
+* near call zafer25.testnet submitTweet '{"tweet": {"ID": "1", "content": "second tweet", "date": "23042022", "tag": "NEAR"}}' --accountId=zafer25.testnet
+* near call zafer25.testnet likeTweet '{"tweetId": "1"}' --accountId=zafer25.testnet
+* near call zafer25.testnet shareTweet '{"tweetId": "1"}' --accountId=zafer25.testnet
 
-
+## LOOM VIDEO LINK
+https://www.loom.com/share/bfc6f969d41c49b2832e0c2f1bc37736
