@@ -3,14 +3,14 @@ A Tweet model is created in which a tweet has a unique id, content, date, tag, l
 
 There are two view methods in which you can get a tweet by its id or tweet lists from submitted tweets.
 
-* near view zafer25.testnet getTweet '{"ID": "0"}'
-* near view zafer25.testnet getTweets
+near view $CONTRACT getTweet '{"ID": "0"}'
+near view $CONTRACT getTweets
 
 Also there are three call methods in which you can submit your tweet, like a tweet and share a tweet.
 
-* near call zafer25.testnet submitTweet '{"tweet": {"ID": "1", "content": "second tweet", "date": "23042022", "tag": "NEAR"}}' --accountId=zafer25.testnet
-* near call zafer25.testnet likeTweet '{"tweetId": "1"}' --accountId=zafer25.testnet
-* near call zafer25.testnet shareTweet '{"tweetId": "1"}' --accountId=zafer25.testnet
+near call $CONTRACT submitTweet '{"tweet": {"ID": "1", "content": "second tweet", "date": "23042022", "tag": "NEAR"}}' --accountId=$CONTRACT
+near call $CONTRACT likeTweet '{"tweetId": "1"}' --accountId=$CONTRACT
+near call $CONTRACT shareTweet '{"tweetId": "1"}' --accountId=$CONTRACT
 
 ## LOOM VIDEO LINK
 https://www.loom.com/share/bfc6f969d41c49b2832e0c2f1bc37736
