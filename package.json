@@ -11,5 +11,9 @@
     "assemblyscript": "^0.20.4",
     "global": "^4.4.0",
     "near-cli": "^3.2.0"
+  },
+  "scripts": {
+    "build:release": "asb",
+    "clean": "rm -rf ./build && rm -rf ./neardev"
   }
 }
